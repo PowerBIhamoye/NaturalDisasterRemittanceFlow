@@ -30,8 +30,8 @@ This project aims to analyze the effect of natural disasters on the flow of remi
 
 To set up this project on your local machine, follow these steps:
 
-1. Clone the repository: `git clone <repository-url>`
-2. Navigate into the cloned repository: `cd <repository-name>`
+1. Clone the repository: `git clone 'https://github.com/PowerBIhamoye/NaturalDisasterRemittanceFlow/'`
+2. Navigate into the cloned repository: `cd NaturalDisasterRemittanceFlow`
 3. Install the required packages: `pip install -r requirements.txt` OR `conda install --file requirements.txt` 
 
 ## Usage
