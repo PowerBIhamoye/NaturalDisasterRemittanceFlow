@@ -11,11 +11,11 @@
     </a>
     <a href='https://numpy.org/'><img src='https://img.shields.io/badge/numpy-white?style=flat-square&logo=numpy&logoColor=blue' alt='numpy webpage'></a>
     <a href="https://matplotlib.org/"><img src="https://img.shields.io/badge/matplotlib-turquoise.svg?style=flat-square&logo=Matplotlib&logoColor=black" alt="Open In Colab"></a>
-    <a href="https://seaborn.pydata.org/"><img src="https://img.shields.io/badge/seaborn-skyblue?style=flat-square&logo=https%3A%2F%2Fseaborn.pydata.org%2F_images%2Flogo-mark-lightbg.svg
+    <a href="https://seaborn.pydata.org/"><img src="https://img.shields.io/badge/seaborn-black?style=flat-square
     " alt="Logo image"></a>
-    <a href="https://www.statsmodels.org/"><img src="https://img.shields.io/badge/statsmodels-green?style=flat-square&logo=statsmodels
+    <a href="https://www.statsmodels.org/"><img src="https://img.shields.io/badge/statsmodels-green?style=flat-square
     " alt="logo"></a>
-    <a href="https://scikit-learn.org/"><img src="https://img.shields.io/badge/scikit--learn-aquamarine?style=flat-square&logo=scikitlearn
+    <a href="https://scikit-learn.org/"><img src="https://img.shields.io/badge/scikit--learn-aquamarine?style=flat-square&logo=scikit-learn
     " alt="Logo image"></a>
     <a href="https://xgboost.readthedocs.io/en/stable/"><img src="https://img.shields.io/badge/XGBoost-brown?style=flat-square&logo=XGBoost" alt="Logo image"></a>
     <a href="https://catboost.ai/"><img src="https://img.shields.io/badge/CatBoost-black?style=flat-square&logo=CatBoost"></a>
