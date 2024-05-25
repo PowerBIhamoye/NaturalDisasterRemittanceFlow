@@ -15,10 +15,10 @@ scaler_path = 'Models/scaler.pkl'
 scaler = pickle.load(open(scaler_path, 'rb'))
 
 # Creating a function for remittance prediction
-def remittance_prediction(country, year, total_deaths, total_affected, gdp):
+def remittance_prediction(country, gdp, year, total_deaths, total_affected, total_disasters):
     # Encode the country using the pre-trained OneHotEncoder
     country_encoded = encoder.transform([[country]])
-    numerical_input = [year, total_deaths, total_affected, gdp]  # Adjust based on your features
+    numerical_input = [year, total_deaths, total_affected, gdp, total_disasters]  # Adjust based on your features
     numerical_input_as_float = [float(x) for x in numerical_input]
     numerical_input_as_numpy_array = np.asarray(numerical_input_as_float).reshape(1, -1)
     
@@ -50,16 +50,17 @@ def main():
 
     # Getting the input data from the user
     country = st.text_input('Country', 'Nigeria')
+    gdp = st.number_input("GDP", min_value=None, max_value=None, value=472000000000, step=1, format="%d")
     year = st.number_input("Year", min_value=None, max_value=None, value=2025, step=1, format="%d")
     total_deaths = st.number_input("Total Deaths", min_value=None, max_value=None, value=200, step=1, format="%d")
     total_affected = st.number_input("Total Affected", min_value=None, max_value=None, value=3000, step=1, format="%d")
-    gdp = st.number_input("GDP", min_value=None, max_value=None, value=472000000000, step=1, format="%d")
+    total_disasters = st.number_input("Total Disasters", min_value=None, max_value=None, value=5, step=1, format="%d")
     #numerical_cols = ['Total Deaths', 'Total Affected', 'Year', 'GDP']
 
     # Code for Prediction
     if st.button('Predict Remittance'):
         try:
-            prediction = remittance_prediction(country, year, total_deaths, total_affected, gdp)
+            prediction = remittance_prediction(country,gdp,year, total_deaths, total_affected, total_disasters)
             formatted_prediction = format_remittance(prediction)
             st.success(f'Predicted remittance for {country} in {year} is: {formatted_prediction}')
         except ValueError as e:
